@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+    <meta charset="UTF-8">
+
+    <title>하이퍼 링크 설정</title>
+    
+</head>
+<body>
+    <h1>6text anchorInner</h1>
+    <a herf = "#" >Alpha 부분</a>
+    <a herf = "#" >Beta 부분</a>
+    <a herf = "#">Gamma 부분</a>
+
+    <hr>
+    <h1 id="alpha">Alpha</h1>
+    <P>Lorem ipsum dolor sit amet</P>
+
+    <h1 id=" Beta">Beta</h1>
+    <P></P>
+
+    <h1 id="Gamma">Gamma</h1>
+     <P></P>
+
+
+    
+    
+    
+    
+    
+    
+    <hr>
+    <h1>5text anchor</h1>
+    <a herf="https://www.hanbit.co.kr/">"한빛출판사네트워크</a>
+    <a herf= "https://www.naver.com/"네이버 </a>
+    <a herf= "https://www.daum.net/"다움 </a>
+
+</body>
+</html>
