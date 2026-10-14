@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>5. 위치 속성</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        .box:nth-child(1) {
+            background-color: red;
+            left: 10px;
+            top: 10px;
+            z-index: 100;
+        }
+
+        .box:nth-child(2) {
+            background-color: green;
+            left: 50px;
+            top: 50px;
+            z-index: 10;
+        }
+
+        .box:nth-child(3) {
+            background-color: blue;
+            left: 90px;
+            top: 90px;
+            z-index: 1;
+        }
+
+        body > div {
+            width: 400px;
+            height: 100px;
+            border: 3px solid black;
+            position: relative;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet</h1>
+
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+
+    <hr>
+
+    <h2>6.5.2 위치 속성 공식</h2>
+
+    <h4>문제 1: h1 태그 2개가 붙어 있습니다.</h4>
+    <h5>
+        해결: 자손에 position: absolute를 적용하면
+        부모에 height를 지정하여 공간을 확보합니다.
+    </h5>
+
+    <h4>문제 2: 색상 상자가 부모를 기준으로 위치하지 않습니다.</h4>
+    <h5>
+        해결: 부모에 position: relative를 적용합니다.
+    </h5>
+
+    <h2>6.5.3 내용이 요소 크기를 벗어날 때 처리 방법</h2>
+    <h4>1. hidden: 영역을 벗어나는 부분 감춤</h4>
+    <h4>2. scroll: 스크롤바 표시</h4>
+    <h4>3. overflow-x와 overflow-y 속성 적용하기</h4>
+</body>
+</html>
