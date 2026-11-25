@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Basic</title>
+    <script>
+        window.onload= function() {
+            document.body.setAttribute('data-custom','value');
+
+            let dataCustom= document.body.getAttribute('data-custom');
+            alert(dataCustom);
+        };
+    </script>
     
 </head>
 
 <body>
-    <img id = "image">
-    
 
     <hr>
     <h2>03문서 객체 조작</h2>
